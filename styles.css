@@ -1,0 +1,486 @@
+body, html {
+    margin: 0; /* Remove default margin */
+    padding: 0;
+    font-family: 'Arial, sans-serif';
+    background: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0; /* Remove margin */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; 
+    background: #ffff;
+}
+
+.section .content {
+    max-width: 600px;
+    padding: 20px;
+    /* background: rgba(255, 255, 255, 0.5); */
+    border-radius: 20px;
+}
+
+/* ...............................................................SECTION 1................................................. */
+#section1 {
+    min-height: 100vh;
+    align-items: flex-end; /* Align items to the bottom */
+    position: relative;
+    color:#333;
+}
+
+
+
+#section1 h2 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    font-family: "La Belle Aurore", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#section1 p {
+    font-size: 1.5em;
+}
+
+/* Desktop background image */
+@media (min-width: 769px) {
+    #section1 {
+        background: url('gallery4.JPG') no-repeat center center;
+        background-size: cover;
+    }
+}
+
+/* Mobile background image */
+@media (max-width: 768px) {
+    #section1 {
+        background: url('gallery8.JPG') no-repeat center center;
+        background-size: cover;
+    }
+    #section1 .content {
+        padding-bottom: 20%;
+    }
+    #section1 p {
+        padding: 0;
+    }
+}
+
+/* ...............................................................SECTION 2................................................. */
+#section2 {
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    position: relative;
+    padding-bottom: 100px; /* Extra space for the semi-circle */
+}
+
+#section2 .content {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Adjust if necessary */
+}
+
+#section2 .verse p {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    font-family: "Noto Naskh Arabic", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#section2 .translation p {
+    font-size: 1em;
+    color: #4d3d3d;
+    font-style:italic;
+}
+
+#section2 h2 {
+    font-size: 1.5em;
+    color: #6b3d3d;
+}
+
+
+/* ...............................................................SECTION 3................................................. */
+#section3 {
+    /* background: #f2f1d1; */
+    padding: 40px 20px;
+}
+
+#section3 .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#section3 .profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#section3 .profile-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#section3 .profile-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#section3 .profile-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #6b3d3d;
+}
+
+#section3 .profile-item p {
+    font-size: 1.2em;
+    color: #4d3d3d;
+    margin-bottom: 20px;
+}
+
+#section3 .instagram-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #896471;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#section3 .instagram-button:hover {
+    background: #A17F8B;
+}
+
+@media (max-width: 768px) {
+    #section3 .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* ...............................................................SECTION 4................................................. */
+#section4 {
+    /* background: #d1f2d1; */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#section4 .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#section4 h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6b3d3d;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Ensure items stay inline */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.time-box {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 80px; /* Adjust width for better fit on mobile */
+}
+
+.time-box span {
+    display: block;
+    font-size: 2em;
+    color: #4d3d3d;
+}
+
+.label {
+    font-size: 1em;
+    color: #6b3d3d;
+}
+
+@media (max-width: 768px) {
+    #section4 h2 {
+        font-size: 2em;
+    }
+
+    .time-box {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .time-box span {
+        font-size: 1.5em;
+    }
+
+    .label {
+        font-size: 0.8em;
+    }
+}
+
+
+/* ...............................................................SECTION 5................................................. */
+#section5 {
+    /* background: #d1f2f1; */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#section5 .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#section5 h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6b3d3d;
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.event h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #6b3d3d;
+}
+
+.event p {
+    font-size: 1.2em;
+    color: #4d3d3d;
+    margin-bottom: 10px;
+}
+
+.map-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #896471;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.map-button:hover {
+    background: #A17F8B;
+}
+
+
+#section6 {
+    /* background: #d1d1f2; */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#section6 .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#section6 h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6b3d3d;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Adjust based on number of images */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    .image {
+        width: calc(50% - 20px); /* Adjust to fit two images in a row */
+    }
+}
+#section7, #section8 {
+    background: #ffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#section7 .content, #section8 .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#section7 h2, #section8 h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6b3d3d;
+}
+
+#section7 textarea, #section8 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#section7 #whatsapp-button, #section8 #show-bank-details {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #896471;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+#section7 #whatsapp-button:hover, #section8 #show-bank-details:hover {
+    background: #A17F8B;
+}
+
+
+#section9 {
+    background-image: url('gallery8.JPG');
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Text color */
+    text-align: center;
+    padding: 100px 0; /* Adjust as needed */
+    position: relative; /* Needed for absolute positioning */
+    height: 100vh; /* Set height to viewport height */
+}
+
+#section9 .content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#section9 h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#section9 h3 {
+    font-size: 2em;
+}
+
+#section10 {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#section10 .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#section10 h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.brand-logo img {
+    width: 150px; /* Adjust the width of the brand logo as needed */
+    margin-bottom: 10px; /* Add margin below the logo */
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.social-media img {
+    width: 40px; /* Adjust the width of social media icons as needed */
+}
+
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+
+    #section1 h1 {
+        font-size: 2.5em;
+    }
+
+    #section1 h2 {
+        font-size: 2em;
+    }
+
+    #section1 p {
+        font-size: 1.2em;
+    }
+
+    #section2 .content {
+        padding: 20px;
+    }
+
+    #section2 .verse p {
+        font-size: 1.2em;
+    }
+
+    #section2 .translation p {
+        font-size: 1em;
+    }
+
+    #section2 h2 {
+        font-size: 2em;
+    }
+
+    #section2::after {
+        height: 50px; /* Adjust height for the size of the semi-circle on mobile */
+    }
+}
