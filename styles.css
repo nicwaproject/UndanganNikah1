@@ -70,7 +70,7 @@ body, html {
     }
     #section1 .content {
         padding-bottom: 30%;
-        line-height:2;
+        line-height:0.5;
     }
     #section1 .content h2 {
         font-size: 2,5em;
