@@ -259,7 +259,7 @@ body, html {
 }
 
 #section5 .content {
-    max-width: 800px;
+    min-width: 600px;
     margin: 0 auto;
 }
 
