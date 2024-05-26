@@ -192,7 +192,7 @@ body, html {
 }
 
 #section4 .content {
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -259,7 +259,7 @@ body, html {
 }
 
 #section5 .content {
-    min-width: 400px;
+    min-width: 100%;
     margin: 0 auto;
 }
 
