@@ -399,8 +399,6 @@ body, html {
 #section9 .content {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width:100%;
 }
 
